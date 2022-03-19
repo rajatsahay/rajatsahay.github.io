@@ -380,6 +380,7 @@ Can replace with : hoverZoomLink
 
 .tdNews{
   width:80px;
+  box-align: "justify"
 }
 
 .tdWork{
