@@ -82,11 +82,12 @@
 
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="imgs/white.jpg" alt="Image Unavailable" width="260" height="160">
+              <img src="imgs/TemplateSelection.png" alt="Image Unavailable" width=auto height=auto style="max-width:260px; max-height:160px;">
+            </td>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="">
-                <papertitle>Continual Learning for Multi Object Tracking</papertitle>
+                <papertitle>Dynamic Template Selection through Change Detection for Adaptive Siamese Tracking</papertitle>
               </a>
               <br>
               <!--
@@ -96,10 +97,10 @@
               <!--<br>-->
 	      <em>Under Review</em>
               <br>
-              <a href="https://arxiv.org/pdf/2202.09938.pdf">arxiv</a>
+              <a href="https://arxiv.org/abs/2203.03181">arXiv</a>/code
 	      <!--<a href="">paper</a>/<a href="">code</a>/<a href="">arXiv</a>/<a href="">supplement</a>-->
               <p></p>
-              <p align="justify">Leveraging Continual Learning methodologies to improve performance on current state-of-the-art multi-object tracking models.
+              <p align="justify">We formulate Single Object Tracking (SOT) as an online incremental learning problem and formulate a new method for dynamic sample selection and memory replay, preventing template corruption. In particular, we propose a change detection mechanism to detect gradual changes in object appearance and select the corresponding samples for online adaptation. We also introduce an entropy-based sampling strategy to maintain a diversified auxiliary buffer for memory replay. Our proposed method can be integrated into any object tracking algorithm that leverages online learning for model adaptation.
               </p>
             </td>
           </tr> 
@@ -119,13 +120,13 @@
           	  <!--<a href="">Madhu Kiran</a>, <strong>Rajat Sahay</strong>, <a href="">Eric Granger</a> <br>-->
 	            <em>Accepted to ICPRAI 2022, paper up soon.</em>
               <br>
-              <a href="https://arxiv.org/abs/2203.03181">arxiv</a>/project/code
+              <a href="https://arxiv.org/abs/2202.09938">arXiv</a>/project/code
            	<!--
               <br>
 	      <a href="">paper</a>/<a href="">code</a>/<a href="">arXiv</a>/<a href="">supplement</a>
               <p></p>
           	-->
-              <p align="justify">We propose a model adaptation method for Siamese trackers that use a generative model to produce a synthetic template from the object search regions of several previous frames, rather than directly using the tracker output. Since the search region encompasses the target, attention is used for robust model adaptation. In particular, our approach relies on an auto-encoder trained through adversarial learning to detect changes in a target object's appearance and predict a future target template, using a set of target templates localized from tracker outputs at previous frames. To prevent template corruption during the update, the proposed tracker also performs change detection using the generative model to suspend updates until the tracker stabilizes, and robust matching can resume through dynamic template fusion.
+              <p align="justify">We propose a model adaptation method for Siamese trackers that use a generative model to produce a synthetic template from the object search regions of several previous frames, rather than directly using the tracker output. Since the search region encompasses the target, we introduce an attention-based mechanism for robust model adaptation. In particular, our approach relies on an auto-encoder trained through adversarial learning to detect changes in a target object's appearance and predict a future target template, using a set of target templates localized from tracker outputs at previous frames. To prevent template corruption during the update, the proposed tracker also performs change detection using the generative model to suspend updates until the tracker stabilizes, and robust matching can resume through dynamic template fusion.
               </p>
             </td>
           </tr> 
